@@ -40,6 +40,20 @@ User can see only post list in two languages.
 
 ![preview](https://i.imgur.com/eZT0IgK.png)
 
+### To create a new user:
+
+~~~
+> php bin/console app:add-admin
+
+Email:
+> user@user.com
+
+Password (your type will be hidden):
+>
+
+User #3 with role ROLE_USER successfully created
+~~~
+
 ## Admin role
 
 Admin can Create, Read, Update and Remove posts.
@@ -47,6 +61,20 @@ Admin can Create, Read, Update and Remove posts.
 ![preview](https://i.imgur.com/Ys3IoqU.png)
 
 ![preview](https://i.imgur.com/7I9uE5U.png)
+
+### To create a new admin:
+
+~~~
+> php bin/console app:add-admin
+
+Email:
+> admin@admin.com
+
+Password (your type will be hidden):
+>
+
+User #4 with role ROLE_ADMIN successfully created
+~~~
 
 ## Credentials
 
