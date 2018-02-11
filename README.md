@@ -42,13 +42,10 @@ User can see only post list in two languages.
 
 ## Credentials
 
-Admin:
-Email: admin@blog.de
-
+Admin:<br>
+Email: admin@blog.de<br>
 Password: admin
 
-User:
-
-Email: user@blog.de
-
+User:<br>
+Email: user@blog.de<br>
 Password: user
