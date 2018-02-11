@@ -43,7 +43,7 @@ User can see only post list in two languages.
 ### To create a new user:
 
 ~~~
-> php bin/console app:add-admin
+> php bin/console app:add-user
 
 Email:
 > user@user.com
