@@ -1,0 +1,33 @@
+{% extends 'post/layout.html.twig' %}
+
+{% block title %}Blog posts{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <article>
+            <h2>
+                <a href="{{ path('post_show', {slug: post.slugEn}) }}">
+                    {{ app.session.get('lang') == 'en' ? post.titleEn : post.titleDe }}
+                </a>
+            </h2>
+
+            <p>
+                <i class="fa fa-user"></i> {{ app.session.get('lang') == 'en' ? post.authorNameEn : post.authorNameDe }}
+            </p>
+
+            <div class="article-text">
+                {{ app.session.get('lang') == 'en' ? post.postTextEn|slice(0, 150) : post.postTextDe|slice(0, 150) }}&hellip;
+            </div>
+
+            {{ include('post/_actions.html.twig') }}
+        </article>
+    {% else %}
+        <div class="well">No posts found</div>
+    {% endfor %}
+
+    {% if posts.haveToPaginate %}
+        <div class="navigation text-center">
+            {{ pagerfanta(posts, 'twitter_bootstrap4_translated', {routeName: 'post_list_paginated'}) }}
+        </div>
+    {% endif %}
+{% endblock %}

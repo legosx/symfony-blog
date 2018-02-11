@@ -1,0 +1,42 @@
+{% form_theme form 'form/layout.html.twig' %}
+
+{% extends 'post/layout.html.twig' %}
+
+{% block title %}New Post{% endblock %}
+
+{% block content %}
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-6">
+            <h2>English</h2>
+            {{ form_row(form.titleEn) }}
+            {{ form_row(form.slugEn) }}
+            {{ form_row(form.authorNameEn) }}
+            {{ form_row(form.authorEmailEn) }}
+            {{ form_row(form.postTextEn) }}
+        </div>
+        <div class="col-6">
+            <h2>Deutsch</h2>
+            {{ form_row(form.titleDe) }}
+            {{ form_row(form.slugDe) }}
+            {{ form_row(form.authorNameDe) }}
+            {{ form_row(form.authorEmailDe) }}
+            {{ form_row(form.postTextDe) }}
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">
+        Save
+    </button>
+    {% if post.id %}
+        <a class="btn btn-danger" onclick="$('.remove-form').submit();" role="button" href="#">Remove</a>
+    {% endif %}
+    <a href="{{ path('post_list') }}" class="btn btn-link">
+        Cancel
+    </a>
+    {{ form_end(form) }}
+    {% if post.id %}
+        <form action="{{ url('post_remove', {id: post.id}) }}" method="post" onsubmit="return confirm('Are you sure?');" class="d-inline-block remove-form">
+            <input type="hidden" name="token" value="{{ csrf_token('remove') }}"/>
+        </form>
+    {% endif %}
+{% endblock %}

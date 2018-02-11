@@ -1,0 +1,9 @@
+{% if is_granted('ROLE_ADMIN') %}
+    <div class="actions-block">
+        <a class="btn btn-primary btn-sm" href="{{ path("post_edit", {id: post.id}) }}" role="button">Edit</a>
+        <form action="{{ url('post_remove', {id: post.id}) }}" method="post" onsubmit="return confirm('Are you sure?');" class="d-inline-block">
+            <input type="hidden" name="token" value="{{ csrf_token('remove') }}"/>
+            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+        </form>
+    </div>
+{% endif %}

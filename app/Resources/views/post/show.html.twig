@@ -1,0 +1,17 @@
+{% extends 'post/layout.html.twig' %}
+
+{% block title %}{{ app.session.get('lang') == 'en' ? post.titleEn : post.titleDe }}{% endblock %}
+
+{% block content %}
+    <h1>{{ app.session.get('lang') == 'en' ? post.titleEn : post.titleDe }}</h1>
+
+    <p>
+        <i class="fa fa-user"></i> {{ app.session.get('lang') == 'en' ? post.authorNameEn : post.authorNameDe }}
+    </p>
+
+    <div class="article-text">
+        {{ app.session.get('lang') == 'en' ? post.postTextEn : post.postTextDe }}
+    </div>
+
+    {{ include('post/_actions.html.twig') }}
+{% endblock %}
