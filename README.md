@@ -37,6 +37,16 @@ Open http://localhost:8000 . Blog will be working in dev environment.
 If you want to run the project in production environment you should configure your web-server:
 https://symfony.com/doc/3.4/setup/web_server_configuration.html
 
+## Credentials
+
+Admin:<br>
+Email: admin@blog.de<br>
+Password: admin
+
+User:<br>
+Email: user@blog.de<br>
+Password: user
+
 ## User role
 
 User can see only post list in two languages.
@@ -78,13 +88,3 @@ Password (your type will be hidden):
 
 User #4 with role ROLE_ADMIN successfully created
 ~~~
-
-## Credentials
-
-Admin:<br>
-Email: admin@blog.de<br>
-Password: admin
-
-User:<br>
-Email: user@blog.de<br>
-Password: user
