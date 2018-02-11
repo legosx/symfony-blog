@@ -1,29 +1,51 @@
 # Symfony Blog
+
 Simple example of blog application with using Symfony
 
-<h2>To Run:</h2>
-<pre>composer install</pre>
-Create DB:
-<pre>php bin/console doctrine:database:create</pre>
-Create tables:
-<pre>php bin/console doctrine:schema:create</pre>
-Import data:
-<pre>php bin/console doctrine:fixtures:load</pre>
-Run server:
-<pre>php bin/console server:run</pre>
-<p>Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a></p>
+## To Run:
 
-<h2>User role</h2>
+~~~
+composer install
+~~~
+
+Create DB:
+
+~~~
+php bin/console doctrine:database:create
+~~~
+
+Create tables:
+
+~~~
+php bin/console doctrine:schema:create
+~~~
+
+Import data:
+
+~~~
+php bin/console doctrine:fixtures:load
+~~~
+
+Run server:
+
+~~~
+php bin/console server:run
+~~~
+
+Open http://localhost:8000
+
+## User role
+
 User can see only post list in two languages.
 
 ![preview](https://i.imgur.com/eZT0IgK.png)
 
-<h2>Credentials</h2>
-<p>Admin:<br>
-Email: admin@blog.de<br>
+## Credentials
+
+Admin:
+Email: admin@blog.de
 Password: admin
-</p>
-<p>User:<br>
-Email: user@blog.de<br>
+
+User:
+Email: user@blog.de
 Password: user
-</p>
