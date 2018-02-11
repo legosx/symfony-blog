@@ -32,7 +32,7 @@ class PostFixtures extends Fixture
 
     private function slugify($text)
     {
-        return preg_replace('/\s+/', '-', mb_strtolower(trim(strip_tags($text)), 'UTF-8'));
+        return preg_replace('/[^A-z0-9-]/', '', mb_strtolower(trim(strip_tags($text)), 'UTF-8'));
     }
 
     private $text_en = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae tortor ac nulla posuere mollis. Phasellus ac ex vel ipsum malesuada venenatis. Quisque consectetur porta libero et aliquet. Etiam ac eros eros. Suspendisse id semper diam. Curabitur rutrum leo lacus, sit amet feugiat mauris dictum ut. Suspendisse tempor quis velit nec porta. Nunc auctor augue sit amet lacus tempor, nec porttitor nisl malesuada. Maecenas id mattis tellus, non rhoncus arcu. Pellentesque interdum ut ex vel aliquam. Proin congue et lectus vitae auctor. Praesent euismod viverra massa, pretium fermentum nibh eleifend at.';
