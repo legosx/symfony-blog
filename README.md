@@ -14,11 +14,11 @@ Run server:
 <p>Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a></p>
 
 <h2>Credentials</h2>
-<p>Admin:
-Email: admin@blog.de
+<p>Admin:<br>
+Email: admin@blog.de<br>
 Password: admin
 </p>
-<p>User:
-Email: user@blog.de
+<p>User:<br>
+Email: user@blog.de<br>
 Password: user
 </p>
