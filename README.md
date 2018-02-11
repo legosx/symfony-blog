@@ -43,7 +43,6 @@ User can see only post list in two languages.
 ## Credentials
 
 Admin:
-
 Email: admin@blog.de
 
 Password: admin
