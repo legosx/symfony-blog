@@ -13,6 +13,11 @@ Run server:
 <pre>php bin/console server:run</pre>
 <p>Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a></p>
 
+<h2>User role</h2>
+User can see only post list in two languages.
+
+![preview](https://i.imgur.com/eZT0IgK.png)
+
 <h2>Credentials</h2>
 <p>Admin:<br>
 Email: admin@blog.de<br>
