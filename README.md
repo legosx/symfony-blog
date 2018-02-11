@@ -32,7 +32,9 @@ Run server:
 php bin/console server:run
 ~~~
 
-Open http://localhost:8000
+Open http://localhost:8000 for development environment
+
+For production environment you should configure your web server https://symfony.com/doc/3.4/setup/web_server_configuration.html
 
 ## User role
 
