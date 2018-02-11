@@ -32,9 +32,10 @@ Run server:
 php bin/console server:run
 ~~~
 
-Open http://localhost:8000 for development environment
+Open http://localhost:8000 . Blog will be working in dev environment.
 
-For production environment you should configure your web server https://symfony.com/doc/3.4/setup/web_server_configuration.html
+If you want to run the project in production environment you should configure your web-server:
+https://symfony.com/doc/3.4/setup/web_server_configuration.html
 
 ## User role
 
