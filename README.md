@@ -40,6 +40,12 @@ User can see only post list in two languages.
 
 ![preview](https://i.imgur.com/eZT0IgK.png)
 
+## Admin role
+
+Admin can Create, Read, Update and Remove posts.
+![preview]https://i.imgur.com/Ys3IoqU.png
+![preview]https://i.imgur.com/7I9uE5U.png
+
 ## Credentials
 
 Admin:<br>
